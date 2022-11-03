@@ -2,20 +2,25 @@
 //  ContentView.swift
 //  ExecutiveTimer
 //
-//  Created by Lutaka Muyoba Chihota on 10/14/22.
+//  Created by Lutaka Muyoba Chihota on 10/15/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView{
+            TimerView()
+                .padding()
+                .tabItem{
+                    Label("Timer", systemImage: "timer")
+                }.tag("Timer")
+            TimerSettingsView()
+                .padding()
+                .tabItem{
+                    Label("Settings", systemImage: "gear")
+                }.tag("Settings")
         }
-        .padding()
     }
 }
 

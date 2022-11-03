@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		63FAC7C628F9E083008CCB59 /* ExecutiveTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAC7C528F9E083008CCB59 /* ExecutiveTimerApp.swift */; };
-		63FAC7C828F9E083008CCB59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAC7C728F9E083008CCB59 /* ContentView.swift */; };
+		63FAC7C828F9E083008CCB59 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAC7C728F9E083008CCB59 /* TimerView.swift */; };
 		63FAC7CA28F9E086008CCB59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FAC7C928F9E086008CCB59 /* Assets.xcassets */; };
 		63FAC7CE28F9E086008CCB59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63FAC7CD28F9E086008CCB59 /* Preview Assets.xcassets */; };
 		63FAC7D828F9E086008CCB59 /* ExecutiveTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAC7D728F9E086008CCB59 /* ExecutiveTimerTests.swift */; };
 		63FAC7E228F9E086008CCB59 /* ExecutiveTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAC7E128F9E086008CCB59 /* ExecutiveTimerUITests.swift */; };
 		63FAC7E428F9E086008CCB59 /* ExecutiveTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAC7E328F9E086008CCB59 /* ExecutiveTimerUITestsLaunchTests.swift */; };
+		63FAC7F128FA21C3008CCB59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAC7F028FA21C3008CCB59 /* ContentView.swift */; };
+		63FAC7F328FA2442008CCB59 /* TimerSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAC7F228FA2442008CCB59 /* TimerSettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		63FAC7C228F9E083008CCB59 /* ExecutiveTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExecutiveTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FAC7C528F9E083008CCB59 /* ExecutiveTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutiveTimerApp.swift; sourceTree = "<group>"; };
-		63FAC7C728F9E083008CCB59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63FAC7C728F9E083008CCB59 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		63FAC7C928F9E086008CCB59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63FAC7CB28F9E086008CCB59 /* ExecutiveTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExecutiveTimer.entitlements; sourceTree = "<group>"; };
 		63FAC7CD28F9E086008CCB59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		63FAC7DD28F9E086008CCB59 /* ExecutiveTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExecutiveTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FAC7E128F9E086008CCB59 /* ExecutiveTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutiveTimerUITests.swift; sourceTree = "<group>"; };
 		63FAC7E328F9E086008CCB59 /* ExecutiveTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutiveTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		63FAC7F028FA21C3008CCB59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63FAC7F228FA2442008CCB59 /* TimerSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				63FAC7C528F9E083008CCB59 /* ExecutiveTimerApp.swift */,
-				63FAC7C728F9E083008CCB59 /* ContentView.swift */,
+				63FAC7C728F9E083008CCB59 /* TimerView.swift */,
 				63FAC7C928F9E086008CCB59 /* Assets.xcassets */,
 				63FAC7CB28F9E086008CCB59 /* ExecutiveTimer.entitlements */,
 				63FAC7CC28F9E086008CCB59 /* Preview Content */,
+				63FAC7F028FA21C3008CCB59 /* ContentView.swift */,
+				63FAC7F228FA2442008CCB59 /* TimerSettingsView.swift */,
 			);
 			path = ExecutiveTimer;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FAC7C828F9E083008CCB59 /* ContentView.swift in Sources */,
+				63FAC7C828F9E083008CCB59 /* TimerView.swift in Sources */,
 				63FAC7C628F9E083008CCB59 /* ExecutiveTimerApp.swift in Sources */,
+				63FAC7F128FA21C3008CCB59 /* ContentView.swift in Sources */,
+				63FAC7F328FA2442008CCB59 /* TimerSettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
